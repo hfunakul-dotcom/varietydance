@@ -1,13 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Company</title>
-</head>
-<body style="font-family:Arial; text-align:center; background:#0b0b0f; color:white;">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VARIETYDANCE</title>
 
-  <h1 style="margin-top:100px;">MY COMPANY</h1>
-  <p>Creative Production • Design • Performance</p>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+}
+
+body{
+  background:#0a0a0f;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background: radial-gradient(circle at top, #1b1b2e, #0a0a0f);
+}
+
+.hero h1{
+  font-size:5rem;
+  letter-spacing:3px;
+  font-weight:800;
+}
+
+.hero p{
+  opacity:0.7;
+  margin-top:10px;
+  font-size:1.2rem;
+}
+
+/* SECTION */
+.section{
+  padding:100px 10%;
+}
+
+.title{
+  font-size:2.5rem;
+  margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:20px;
+}
+
+.card{
+  background:#151527;
+  padding:25px;
+  border-radius:16px;
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#1d1d33;
+}
+
+/* ABOUT BOX */
+.about{
+  max-width:800px;
+  opacity:0.8;
+  line-height:1.6;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:60px;
+  opacity:0.5;
+  font-size:0.9rem;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>VARIETYDANCE</h1>
+  <p>Creative Production • Stage Design • Performance Experience</p>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2 class="title">About Us</h2>
+  <p class="about">
+    We create immersive performance experiences combining choreography, visual design, lighting, and storytelling.
+    Our focus is building stage moments that feel cinematic, emotional, and unforgettable.
+  </p>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+  <h2 class="title">Services</h2>
+
+  <div class="grid">
+    <div class="card">Stage Production Design</div>
+    <div class="card">Creative Direction</div>
+    <div class="card">Choreography Development</div>
+    <div class="card">Visual & Motion Concept</div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="section">
+  <h2 class="title">Highlights</h2>
+
+  <div class="grid">
+    <div class="card">Opening Show Concepts</div>
+    <div class="card">Festival Performances</div>
+    <div class="card">Luxury Brand Events</div>
+    <div class="card">Stage Experiments</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2 class="title">Contact</h2>
+  <p class="about">
+    Email: contact@varietydance.com<br/>
+    Production: Thailand Based Studio
+  </p>
+</div>
+
+<footer>
+© 2026 VARIETYDANCE — All Rights Reserved
+</footer>
 
 </body>
 </html>
